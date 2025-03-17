@@ -1,0 +1,11 @@
+1) O que acontece se extrato de um cliente deve agora retornar no formato HTML, ao invés de String?
+já que a classe Client gerencia os alugueis e também é responsável por formatar a saída do extrato, pra mudar o formato teria que modificar essa mesma classe repetidamente.
+
+2) O que ocorre se as regras de cálculo e preço mudarem?
+sempre teria que modificar Client.
+
+3) Se classificação das fitas mudar toda semana?
+a fita pertence a uma classe fixa, mas como essa classificação muda toda semana seria necessário mudar a classe de cada fita constantemente (inviável).
+
+4) Se esquema de pontos de alugador puder mudar a qualquer hora?
+teria que modificar as classes Client, Rent e Tape.
